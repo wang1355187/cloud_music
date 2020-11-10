@@ -38,6 +38,7 @@ Page({
   },
   //获取歌曲数据
   getmusic:function(e){
+    //判断是否为同一首歌
     if (e.id == app.getPlayMusicId()) {
       this.setData({
         isSame: true
