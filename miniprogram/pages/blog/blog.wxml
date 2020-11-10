@@ -1,0 +1,25 @@
+<!--pages/blog/blog.wxml-->
+<!--搜索发布功能块-->
+<view class="fixed">
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    bind:search="onSearch"
+    bind:change="onInput"
+  >
+    <view slot="action" bind:tap="onPublish"><image src="../../images/blog_icon.png" class="icon"></image></view>
+  </van-search>
+</view>
+<!--博客列表-->
+  <view class="blog-list">
+    <block wx:for="{{blogList}}" wx:key="index">
+      <view class="blog-panel">
+        <blog-card blog="{{item}}"/>
+      </view>
+    </block>
+  </view>
+
+<!--底部授权组件-->
+<login-modal modalshow="{{modalshow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail">
+</login-modal>

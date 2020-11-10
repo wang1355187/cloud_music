@@ -1,0 +1,16 @@
+<!--components/login-modal/login-modal.wxml-->
+<view class="container" hidden="{{!modalshow}}">
+  <view class="panel">
+      <view class="close_icon" bindtap="onClose">
+        <image class="close_image" src="../../images/close.png"></image>
+      </view>
+    <view>
+      <button 
+        class="login"
+        open-type="getUserInfo"
+        bindgetuserinfo="onGotUserInfo"
+      >获取微信授权信息
+      </button>
+    </view>
+  </view>
+</view>

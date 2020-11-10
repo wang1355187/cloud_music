@@ -1,0 +1,6 @@
+<!--components/item-list/item-list.wxml-->
+<view class="container" bindtap="_getMusic">
+  <image src="{{playlist.picUrl}}"></image>
+  <view class="itemname">{{playlist.name}}</view>
+  <view class="list_count">{{_count}}</view>
+</view>

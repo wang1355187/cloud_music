@@ -1,0 +1,16 @@
+<!--miniprogram/pages/playlist/playlist.wxml-->
+<!--轮播图-->
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000">
+  <block wx:for="{{swiperImgUrls}}" wx:key="index" >
+    <swiper-item>
+      <image src="{{item}}" class="turnimg" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!--歌单组件-->
+<view  class="list_item">
+  <block wx:for="{{playlist}}" wx:key="index">
+    <item-list playlist="{{item}}"></item-list>
+  </block>
+</view>
+

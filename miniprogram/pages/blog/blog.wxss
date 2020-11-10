@@ -1,0 +1,22 @@
+/* pages/blog/blog.wxss */
+page {
+  background-color: #f1f1f1;
+}
+.fixed{
+  width: 100%;
+  top:0rpx;
+  position: fixed;
+}
+.icon{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top:20rpx;
+}
+.blog-list {
+  margin-top: 180rpx;
+}
+
+.blog-panel {
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}

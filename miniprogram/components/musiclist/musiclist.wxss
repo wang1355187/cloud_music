@@ -1,0 +1,30 @@
+/* components/musiclist/musiclist.wxss */
+.music_container{
+  margin-top: 10rpx;
+  padding: 14rpx 20rpx;
+  display: flex;
+  height: 80rpx;
+}
+.indexbox{
+  color: #888;
+  font-size: 34rpx;
+  width: 80rpx;
+}
+.namebox{
+  margin-left: 50rpx;
+  font-size:34rpx;
+  flex:1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.singer{
+  font-size: 24rpx;
+  color: #888;
+}
+.onplay{
+  color: red;
+}
+.playing view, .playing text {
+  color: #d43c33;
+}

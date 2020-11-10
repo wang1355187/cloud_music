@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search",
+    "login-modal":"/components/login-modal/login-modal",
+    "blog-card":"/components/blog-card/blog-card"
+  }
+}
